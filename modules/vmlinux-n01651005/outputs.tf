@@ -14,9 +14,6 @@ output "linux_vm_public_ips" {
   value = { for key, pip in azurerm_public_ip.public_ip : key => pip.ip_address }
 }
 
-
-
-
 output "public_ips" {
   value = { for k, v in azurerm_public_ip.public_ip : k => v.ip_address }
 }
