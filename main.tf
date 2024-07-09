@@ -87,7 +87,6 @@ module "database" {
   ssl_enforcement_enabled = var.ssl_enforcement_enabled
 }
 
-# Declare these variables in the root module's variables.tf
 variable "postgresql_version" {
   description = "The version of PostgreSQL to use"
   default     = "11"
